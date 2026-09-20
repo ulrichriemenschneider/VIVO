@@ -109,8 +109,6 @@ var i18nStrings = {
 
 <#if googleMapsKey??>
     ${scripts.add('<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=${googleMapsKey}"></script>')}
-<#else>
-    ${scripts.add('<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>')}
 </#if>
 ${scripts.add('<script type="text/javascript" src="${urls.base}/webjars/jquery-ui/jquery-ui.min.js"></script>',
 			  '<script type="text/javascript" src="${urls.base}/js/jquery_plugins/jquery.blockUI.js"></script>',
@@ -147,4 +145,3 @@ ${scripts.add('<script type="text/javascript" src="${urls.base}/webjars/jquery-u
 ${stylesheets.add('<link rel="stylesheet" href="${urls.base}/webjars/jquery-ui-themes/smoothness/jquery-ui.min.css" />',
                   '<link rel="stylesheet" href="${urls.base}/js/visualization/entitycomparison/jquery_plugins/datatable/demo_table.css" />',
                   '<link rel="stylesheet" href="${urls.base}/css/visualization/mapofscience/layout.css" />')}
-
