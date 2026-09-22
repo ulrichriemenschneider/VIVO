@@ -109,6 +109,8 @@ var i18nStrings = {
 
 <#if googleMapsKey??>
     ${scripts.add('<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=${googleMapsKey}"></script>')}
+<#else>
+    ${scripts.add('<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>')}
 </#if>
 ${scripts.add('<script type="text/javascript" src="${urls.base}/webjars/jquery-ui/jquery-ui.min.js"></script>',
 			  '<script type="text/javascript" src="${urls.base}/js/jquery_plugins/jquery.blockUI.js"></script>',
